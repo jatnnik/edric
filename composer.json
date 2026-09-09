@@ -1,0 +1,44 @@
+{
+  "name": "jatnnik/package",
+  "description": "A blank slate",
+  "autoload": {
+    "psr-4": {
+      "Jatnnik\\Package\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jatnnik\\Package\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jannik Baranczyk",
+      "homepage": "https://jatnnik.dev"
+    }
+  ],
+  "require": {
+    "php": "^8.5"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.31",
+    "pestphp/pest": "^5.1",
+    "phpstan/phpstan": "^2.2"
+  },
+  "scripts": {
+    "analyse": "./vendor/bin/phpstan",
+    "fmt": "./vendor/bin/pint",
+    "test": "./vendor/bin/pest",
+    "qa": [
+      "composer fmt",
+      "composer analyse",
+      "composer test"
+    ]
+  },
+  "license": "MIT",
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
