@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jatnnik\Package\Tests;
+namespace Jatnnik\Edric\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 

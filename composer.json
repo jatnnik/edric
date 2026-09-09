@@ -1,14 +1,15 @@
 {
-  "name": "jatnnik/package",
-  "description": "A blank slate",
+  "name": "jatnnik/edric",
+  "type": "library",
+  "description": "A simple PHP router",
   "autoload": {
     "psr-4": {
-      "Jatnnik\\Package\\": "src/"
+      "Jatnnik\\Edric\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Jatnnik\\Package\\Tests\\": "tests/"
+      "Jatnnik\\Edric\\Tests\\": "tests/"
     }
   },
   "authors": [

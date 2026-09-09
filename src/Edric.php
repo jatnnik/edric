@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Jatnnik\Package;
+namespace Jatnnik\Edric;
 
-final readonly class Package
+final readonly class Edric
 {
     // Hello World
 }

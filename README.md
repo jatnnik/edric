@@ -1,5 +1,5 @@
-# 🏜️ Package
-Describe what this package does.
+# 🌌 Edric
+A simple PHP router for small projects.
 
 > [!IMPORTANT]
 > This package is still a work in progress! Feel free to open issues.
@@ -7,7 +7,7 @@ Describe what this package does.
 ## Quickstart
 
 ```sh
-composer require jatnnik/package
+composer require jatnnik/edric
 ```
 
 Happy hacking :)

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Jatnnik\Package\Tests\TestCase;
+use Jatnnik\Edric\Tests\TestCase;
 
 /*
 |--------------------------------------------------------------------------
