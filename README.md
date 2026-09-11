@@ -1,4 +1,5 @@
 # 🌌 Edric
+
 A simple PHP router for small projects.
 
 > [!IMPORTANT]
@@ -8,6 +9,19 @@ A simple PHP router for small projects.
 
 ```sh
 composer require jatnnik/edric
+```
+
+## Usage
+
+```php
+$router = new Router();
+
+Route::use($router);
+
+Route::get('/', fn () => $response);
+Route::get('/users/{id}', [UserController::class, 'show']);
+
+$response = $router->handle($request);
 ```
 
 Happy hacking :)
