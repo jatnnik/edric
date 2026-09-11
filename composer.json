@@ -1,7 +1,8 @@
 {
   "name": "jatnnik/edric",
+  "description": "A lightweight PSR-compatible PHP router with a Laravel-inspired API.",
   "type": "library",
-  "description": "A simple PHP router",
+  "license": "MIT",
   "autoload": {
     "psr-4": {
       "Jatnnik\\Edric\\": "src/"
@@ -19,12 +20,16 @@
     }
   ],
   "require": {
-    "php": "^8.5"
+    "php": "^8.2",
+    "psr/http-message": "^1.1 || ^2.0",
+    "psr/http-server-handler": "^1.0"
   },
   "require-dev": {
     "laravel/pint": "^1.31",
     "pestphp/pest": "^5.1",
-    "phpstan/phpstan": "^2.2"
+    "phpstan/phpstan": "^2.2",
+    "nyholm/psr7": "^1.8",
+    "nyholm/psr7-server": "^1.1"
   },
   "scripts": {
     "analyse": "./vendor/bin/phpstan",
@@ -36,7 +41,6 @@
       "composer test"
     ]
   },
-  "license": "MIT",
   "config": {
     "allow-plugins": {
       "pestphp/pest-plugin": true
